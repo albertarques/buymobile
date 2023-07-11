@@ -1,4 +1,3 @@
-import Header from "@/components/UI/header/Header";
 import ProductsList from "@/components/products/ProductsList";
 
 const fetchProducts = async () => {
