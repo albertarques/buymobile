@@ -16,7 +16,7 @@ export default async function Product({ params }) {
       <ul className="flex">
         <li className="after:content-['_->_']">
           <Link href="/" className="text-blue-500">
-            Home
+            Inicio
           </Link>
         </li>
         <li className="before:content-['_']">
