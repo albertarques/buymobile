@@ -1,6 +1,8 @@
-import Header from '@/components/header/Header'
 import './globals.css'
+
 import { Inter } from 'next/font/google'
+import Header from '@/components/header/Header'
+import { CartProvider } from '@/components/context/CartContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -9,14 +11,16 @@ export const metadata = {
   description: 'Tu tienda de móviles retro',
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout({children}) {
 
   return (
-    <html lang="es">
-      <body className={[inter.className + " justify-center"]}>
-        <Header />
-        {children}
-      </body>
-    </html>
+      <html lang="es">
+        <body className={[inter.className + " justify-center"]}>
+          <CartProvider>
+            <Header />
+            {children}
+          </CartProvider>
+        </body>
+      </html>
   )
 }
