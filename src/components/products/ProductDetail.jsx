@@ -8,8 +8,8 @@ export default function ProductDetail({product}) {
     <div className="container mx-auto px-4">
       <div className="bg-white rounded-2xl p-5 my-8 mx-4 md:w-4/5 md:mx-auto md:grid md:grid-cols-2 md:gap-4">
         <Link href="/" className="inline-block h-fit col-span-2 w-full row underline ">
-          <button className="rounded-xl bg-red-500 text-white px-3 py-2">
-            Back to list
+          <button className="rounded-xl bg-blue-500 text-white px-3 py-2">
+            Volver a la lista
           </button>
         </Link>
           <Image
@@ -22,9 +22,9 @@ export default function ProductDetail({product}) {
         <div>
           <p>{product.brand}</p>
           <h2 className="font-bold">{product.model}</h2>
-          <p>Price: {product.price}€</p>
+          <p>Precio: {product.price}€</p>
           <br />
-          <h3 className="font-bold">Description</h3>
+          <h3 className="font-bold">Descripción</h3>
           <p>CPU: {product.cpu}</p>
           <p>RAM: {product.ram}</p>
           <p>Sistema Operativo: {product.os}</p>
@@ -35,10 +35,10 @@ export default function ProductDetail({product}) {
           <p>Dimensiones: {product.dimentions}</p>
           <p>Peso: {product.weight} grs.</p>
           <br />
-          <h3 className="font-bold">Options</h3>
+          <h3 className="font-bold">Opciones</h3>
           <div className="md:mr-4">
             <SelectOption options={product.options.colors} label={"Color:"} id={"color"} />
-            <SelectOption options={product.options.storages} label={"Storage:"} id={"storage"}/>
+            <SelectOption options={product.options.storages} label={"Almacenamiento:"} id={"storage"}/>
           </div>
           <AddProductButton product={product} />
         </div>
