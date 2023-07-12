@@ -4,7 +4,6 @@ import Link from "next/link";
 const fetchProduct = async (id) => {
   const res = await fetch("https://itx-frontend-test.onrender.com/api/product/" + id);
   const data = await res.json();
-  console.log(data)
   return data;
 };
 
