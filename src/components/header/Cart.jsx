@@ -1,4 +1,18 @@
+'use client'
+
+import { useContext, useEffect } from "react";
+import { CartContext } from "../context/CartContext";
+
 export default function Cart() {
+
+  const {cartContext, setCartContext} = useContext(CartContext)
+
+  useEffect(() => {
+    if (localStorage.getItem("cart") != null) {
+      setCartContext({cart: JSON.parse(localStorage.getItem("cart"))})
+    }
+  }, [])
+
   return (
     <div className="bg-white rounded-3xl flex h-12 p-1 m-2">
       <svg
@@ -16,7 +30,7 @@ export default function Cart() {
         />
       </svg>
       <p className="bg-red-500 rounded-3xl py-1 my-auto h-10 w-10 text-center inline align-middle">
-        2
+        {cartContext.cart != null ? cartContext.cart.length : "0"}
       </p>
     </div>
   );
