@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import AddProductButton from "./AddProductButton";
+import SelectOption from "../SelectOption";
 
 export default function ProductDetail({product}) {
   return (
@@ -33,6 +34,12 @@ export default function ProductDetail({product}) {
           <p>Cámara frontal: {product.secondaryCamera}</p>
           <p>Dimensiones: {product.dimentions}</p>
           <p>Peso: {product.weight} grs.</p>
+          <br />
+          <h3 className="font-bold">Options</h3>
+          <div className="md:mr-4">
+            <SelectOption options={product.options.colors} label={"Color:"} id={"color"} />
+            <SelectOption options={product.options.storages} label={"Storage:"} id={"storage"}/>
+          </div>
           <AddProductButton product={product} />
         </div>
       </div>
