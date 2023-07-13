@@ -7,11 +7,6 @@ export default function ProductDetail({product}) {
   return (
     <div className="container mx-auto px-4">
       <div className="bg-white rounded-2xl p-5 my-8 mx-4 md:w-4/5 md:mx-auto md:grid md:grid-cols-2 md:gap-4">
-        <Link href="/" className="inline-block h-fit col-span-2 w-full row underline ">
-          <button className="rounded-xl bg-blue-500 text-white px-3 py-2">
-            Volver a la lista
-          </button>
-        </Link>
           <Image
             className="mx-auto"
             src={product.imgUrl}
@@ -41,6 +36,11 @@ export default function ProductDetail({product}) {
             <SelectOption options={product.options.storages} label={"Almacenamiento:"} id={"storage"}/>
           </div>
           <AddProductButton product={product} />
+          <Link href="/" className="inline-block h-fit col-span-2 w-full row underline ">
+            <button className="rounded-xl bg-orange-500 text-white px-3 py-2">
+              Volver a la lista
+            </button>
+          </Link>
         </div>
       </div>
     </div>
