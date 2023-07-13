@@ -13,7 +13,7 @@ export default async function Product({ params }) {
 
   return (
     <main className="container">
-      <ul className="flex">
+      <ul className="flex p-4">
         <li className="after:content-['_->_']">
           <Link href="/" className="text-blue-500">
             Inicio
