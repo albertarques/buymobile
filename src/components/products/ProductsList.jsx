@@ -39,10 +39,6 @@ export default function ProductsList({ products }) {
         {filteredProducts.filter((product) => product.price !== "").map((product) => (
             <ProductCard product={product} key={product.id} />
         ))}
-
-        {/* {filteredProducts.map((product) => (
-            <ProductCard product={product} key={product.id} />
-        ))} */}
       </div>
     </>
   );
