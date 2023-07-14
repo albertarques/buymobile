@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ProductCard({ product }) {
   return (
@@ -7,7 +8,7 @@ export default function ProductCard({ product }) {
       className="bg-white rounded-2xl shadow hover:bg-slate-200"
     >
       <div className="p-3  flex-nowrap md:mx-2">
-        <img
+        <Image
           src={product.imgUrl}
           alt={product.model}
           className="w-64 h-64 object-contain mx-auto"
