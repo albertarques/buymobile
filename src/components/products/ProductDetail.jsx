@@ -17,7 +17,7 @@ export default function ProductDetail({product}) {
         <div>
           <p className="text-xl">{product.brand}</p>
           <h2 className="text-2xl font-bold">{product.model}</h2>
-          <p className="text-xl">Precio: {product.price}€</p>
+          <p className="text-xl">PVP: {product.price}€</p>
           <br />
           <h3 className="font-bold">Características:</h3>
           <p>CPU: {product.cpu}</p>
