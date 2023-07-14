@@ -36,13 +36,11 @@ export default function ProductDetail({product}) {
             <SelectOption options={product.options.storages} label={"Almacenamiento:"} id={"storage"}/>
           </div>
           <AddProductButton product={product} />
-          <Link href="/" className="inline-block h-fit col-span-2 w-full row underline ">
-            <button className="rounded-xl bg-orange-500 text-white px-3 py-2">
+          <Link href="/" className="rounded-xl bg-orange-500 text-white px-3 py-2 inline-block h-fit col-span-2 ml-4 ">
               Volver a la lista
-            </button>
           </Link>
         </div>
       </div>
     </div>
-  );
+  )
 }
