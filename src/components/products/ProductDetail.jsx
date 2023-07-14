@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AddProductButton from "./AddProductButton";
 import SelectOption from "../SelectOption";
+import LinkAsButton from "../UI/LinkAsButton";
 
 export default function ProductDetail({product}) {
   return (
@@ -15,11 +16,11 @@ export default function ProductDetail({product}) {
             height={250}
           />
         <div>
-          <p>{product.brand}</p>
-          <h2 className="font-bold">{product.model}</h2>
-          <p>Precio: {product.price}€</p>
+          <p className="text-xl">{product.brand}</p>
+          <h2 className="text-2xl font-bold">{product.model}</h2>
+          <p className="text-xl">Precio: {product.price}€</p>
           <br />
-          <h3 className="font-bold">Descripción</h3>
+          <h3 className="font-bold">Características:</h3>
           <p>CPU: {product.cpu}</p>
           <p>RAM: {product.ram}</p>
           <p>Sistema Operativo: {product.os}</p>
@@ -36,9 +37,7 @@ export default function ProductDetail({product}) {
             <SelectOption options={product.options.storages} label={"Almacenamiento:"} id={"storage"}/>
           </div>
           <AddProductButton product={product} />
-          <Link href="/" className="rounded-xl bg-orange-500 text-white px-3 py-2 inline-block h-fit col-span-2 ml-4 ">
-              Volver a la lista
-          </Link>
+          <LinkAsButton text="Volver a la lista" route="/" bgColor="orange" textColor="white"/>
         </div>
       </div>
     </div>
