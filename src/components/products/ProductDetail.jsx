@@ -5,10 +5,10 @@ import LinkAsButton from "../UI/LinkAsButton";
 
 export default function ProductDetail({product}) {
   return (
-    <div className="container mx-auto px-4">
-      <div className="bg-white rounded-2xl p-5 my-8 mx-4 md:w-4/5 md:mx-auto md:grid md:grid-cols-2 md:gap-4">
+    <div className="container mx-auto">
+      <div className="bg-white rounded-2xl p-5 mx-4 md:w-4/5 md:mx-auto md:grid md:grid-cols-2 md:gap-4">
           <Image
-            className="mx-auto"
+            className="mx-auto my-4"
             src={product.imgUrl}
             alt={product.model}
             width={300}
