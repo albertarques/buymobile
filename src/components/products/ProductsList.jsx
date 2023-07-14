@@ -36,7 +36,11 @@ export default function ProductsList({ products }) {
         products={products}
       />
       <div className="container px-4 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 h-full py-10">
-        {filteredProducts.filter((product) => product.price !== "").map((product) => (
+        {/* {filteredProducts.filter((product) => product.price !== "").map((product) => (
+            <ProductCard product={product} key={product.id} />
+        ))} */}
+
+        {filteredProducts.map((product) => (
             <ProductCard product={product} key={product.id} />
         ))}
       </div>
