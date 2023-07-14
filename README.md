@@ -58,9 +58,13 @@ El proyecto se encuentra estructurado de la siguiente manera:
 
 - **src**: Contiene el código fuente de la aplicación.
 - **src/app**: Contiene las páginas de la aplicación y las carpetas para las páginas dinamicas.
+  - **src/app/page.js**: Contiene la página principal de la aplicación.
   - **src/app/products/[product]**: Contiene la página dinámica del detalle del producto.
 - **app/components**: Contiene los componentes de la aplicación.
-- **app/context**: Contiene los contextos de la aplicación.
+  - **app/components/context**: Contiene los contextos de la aplicación.
+  - **app/components/header**: Contiene el componente del header de la aplicación.
+  - **app/components/products**: Contiene los componentes de producto lista de productos, detalle de producto...
+  - **app/components/UI**: Contiene los componentes reutilizables de UI de la aplicación.
 
 ## Pruebas unitarias
 
