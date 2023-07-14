@@ -33,7 +33,7 @@ pnpm dev
 ```
  Abre [http://localhost:3000](http://localhost:3000) con tu navegador para ver el resultado.
 
-# Despliegue
+## Despliegue
 
 Para desplegar el proyecto se debe ejecutar el siguiente comando en la terminal:
 
@@ -45,7 +45,7 @@ yarn build
 pnpm build
 ```
 
-# Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - [Next.js](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
@@ -62,7 +62,7 @@ El proyecto se encuentra estructurado de la siguiente manera:
 - **app/components**: Contiene los componentes de la aplicación.
 - **app/context**: Contiene los contextos de la aplicación.
 
-# Pruebas unitarias
+## Pruebas unitarias
 
 Para ejecutar las pruebas unitarias se debe ejecutar el siguiente comando en la terminal:
 
