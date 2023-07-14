@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import AddProductButton from "./AddProductButton";
 import SelectOption from "../SelectOption";
 import LinkAsButton from "../UI/LinkAsButton";
