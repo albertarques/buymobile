@@ -7,7 +7,7 @@ export default function ProductsSearchBar({ filteredProducts, setFilteredProduct
         className="text-xl font-bold align-middle md:py-2 md:mx-2 md:align-middle md:inline-block"
         htmlFor="searchInput"
       >
-        Search:
+        Buscar:
       </label>
       <input
         id="searchInput"
