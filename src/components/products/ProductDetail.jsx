@@ -1,6 +1,6 @@
 import Image from "next/image";
 import AddProductButton from "./AddProductButton";
-import SelectOption from "../SelectOption";
+import SelectOption from "../UI/SelectOption";
 import LinkAsButton from "../UI/LinkAsButton";
 
 export default function ProductDetail({product}) {
