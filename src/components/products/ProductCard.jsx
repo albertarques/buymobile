@@ -14,7 +14,7 @@ export default function ProductCard({ product }) {
         />
         <p className="text-xl">{product.brand}</p>
         <h2 className="text-xl font-bold">{product.model}</h2>
-        <p className="text-xl">PVP: {product.price}€</p>
+        <p className="text-xl">{product.price ? "PVP:" + product.price + "€": "No disponible"}</p>
       </div>
     </Link>
   );
