@@ -11,6 +11,8 @@ export default function ProductCard({ product }) {
         <Image
           src={product.imgUrl}
           alt={product.model}
+          width={256}
+          height={256}
           className="w-64 h-64 object-contain mx-auto"
         />
         <p className="text-xl">{product.brand}</p>
