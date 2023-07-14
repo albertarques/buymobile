@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function ({text, route, bgColor, textColor}) {
+export default function LinkAsButton({text, route, bgColor, textColor}) {
   return (
     <Link
       href={route}
