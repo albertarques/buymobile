@@ -1,9 +1,6 @@
 'use client'
 
 export default function ProductsSearchBar({ filteredProducts, setFilteredProducts, products}) {
-
-  console.log(filteredProducts)
-
   return (
     <div className="container px-4 flex flex-col md:flex-row my-2 justify-end">
       <label
