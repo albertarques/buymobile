@@ -27,7 +27,7 @@ export default function AddProductButton({ product }) {
   if (product.price != "" && product.price != "0" && product.price != null) {
     return (
       <button
-        className="bg-blue-500 rounded-xl px-4 py-2 text-white my-4"
+        className="bg-blue-500 hover:bg-blue-700 active:bg-blue-900 rounded-xl px-4 py-2 text-white my-4"
         onClick={() => handlerAddToCart(product)}
       >
         Añadir al carrito
