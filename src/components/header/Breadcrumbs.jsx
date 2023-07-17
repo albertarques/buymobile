@@ -18,7 +18,7 @@ export default function Breadcrumbs() {
           return (
             <li key={index}>
               <Link href="/">
-                Home
+                Inicio
               </Link>
             </li>
           );
