@@ -18,13 +18,6 @@ export default async function Home() {
 
   if(!products) return (
     <main className="flex container min-h-screen flex-col items-center relative">
-      <ul className="flex p-4 w-full">
-        <li>
-          <Link href="/" className="text-blue-500">
-            Inicio
-          </Link>
-        </li>
-      </ul>
       <h1 className="text-2xl">Error al mostrar los productos!</h1>
       <p>Por favor, intentelo nuevamente más tarde.</p>
     </main>
@@ -32,14 +25,6 @@ export default async function Home() {
 
   return (
     <main className="flex container min-h-screen flex-col items-center relative">
-      <ul className="flex p-4 w-full">
-        <li>
-          <Link href="/" className="text-blue-500">
-            Inicio
-          </Link>
-        </li>
-      </ul>
-
       <ProductsList products={products} />
     </main>
   );
