@@ -50,6 +50,9 @@ pnpm build
 - [Next.js](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Jest](https://jestjs.io/)
+  - [Testing Library - Jest DOM](https://testing-library.com/docs/ecosystem-jest-dom/)
+  - [Testing Library - React](https://testing-library.com/docs/react-testing-library/intro/)
+  - [Testing Library - User Event](https://testing-library.com/docs/ecosystem-user-event/)
 - [Eslint](https://eslint.org/)
 
 # Estructura del proyecto
