@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function ProductCard({ product }) {
   return (
     <Link
-      href={`/products/${product.id}`}
+      href={`${product.id}?model=${product.model}`}
       className="bg-white rounded-2xl shadow hover:bg-slate-200"
     >
       <div className="p-3  flex-nowrap md:mx-2">
