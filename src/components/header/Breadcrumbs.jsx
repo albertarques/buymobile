@@ -10,7 +10,6 @@ export default function Breadcrumbs() {
   const pathLast = pathArray[pathLength - 1];
 
   const search = useSearchParams().get("model");
-  console.log(search);
   
   return (
     <ul className="container flex p-4 bg-blue-100">
