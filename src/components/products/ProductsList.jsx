@@ -14,7 +14,7 @@ export default function ProductsList({ products }) {
           filteredProducts={filteredProducts}
           setFilteredProducts={setFilteredProducts}
           products={products}/>
-        <div className="container px-4 mx-auto h-full py-10">
+        <div className="container p-4 mx-auto h-full">
           <div className="flex flex-col items-center justify-center">
             <h2 className="text-3xl font-bold text-center">
               No hemos encontrado este producto!

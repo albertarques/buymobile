@@ -2,7 +2,7 @@
 
 export default function ProductsSearchBar({ filteredProducts, setFilteredProducts, products}) {
   return (
-    <div className="container px-4 flex flex-col md:flex-row my-2 justify-end">
+    <div className="container px-4 flex flex-col md:flex-row my-4 justify-end">
       <label
         className="text-xl font-bold align-middle md:py-2 md:mx-2 md:align-middle md:inline-block"
         htmlFor="searchInput"

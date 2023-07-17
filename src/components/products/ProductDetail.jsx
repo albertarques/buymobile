@@ -6,7 +6,7 @@ import LinkAsButton from "../UI/LinkAsButton";
 export default function ProductDetail({product}) {
   return (
     <div className="container mx-auto">
-      <div className="bg-white rounded-2xl p-5 mx-4 md:w-4/5 md:mx-auto md:grid md:grid-cols-2 md:gap-4">
+      <div className="bg-white rounded-2xl p-5 mx-4 md:mx-auto md:grid md:grid-cols-2 md:gap-4">
           <Image
             className="mx-auto my-4"
             src={product.imgUrl}
@@ -31,7 +31,7 @@ export default function ProductDetail({product}) {
           <p>Peso: {product.weight} grs.</p>
           <br />
           <h3 className="font-bold">Opciones</h3>
-          <div className="md:mr-4">
+          <div className="md:mr-4 md:grid md:grid-cols-2">
             <SelectOption options={product.options.colors} label={"Color:"} id={"color"} />
             <SelectOption options={product.options.storages} label={"Almacenamiento:"} id={"storage"}/>
           </div>
