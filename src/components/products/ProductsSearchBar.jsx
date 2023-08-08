@@ -1,6 +1,8 @@
 'use client'
+import { useState } from "react";
 
-export default function ProductsSearchBar({ filteredProducts, setFilteredProducts, products}) {
+export default function ProductsSearchBar({ setSearchTerm }) {
+
   return (
     <div className="container px-4 flex flex-col md:flex-row my-4 justify-end">
       <label
@@ -15,22 +17,7 @@ export default function ProductsSearchBar({ filteredProducts, setFilteredProduct
         type="text"
         placeholder="Type model name or brand..."
         onChange={(e) => {
-          const keyword = e.target.value;
-          if (keyword !== "" && filteredProducts.length > 0) {
-            const results = filteredProducts.filter((filteredProducts) => {
-              return (
-                filteredProducts.model
-                  .toLowerCase()
-                  .includes(keyword.toLowerCase()) ||
-                filteredProducts.brand
-                  .toLowerCase()
-                  .includes(keyword.toLowerCase())
-              );
-            });
-            setFilteredProducts(results);
-          } else {
-            setFilteredProducts(products);
-          }
+          setSearchTerm(e.target.value);
         }}
       />
     </div>
